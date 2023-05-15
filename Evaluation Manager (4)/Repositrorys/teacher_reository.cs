@@ -22,7 +22,7 @@ namespace Evaluation_Manager.Repositories {
             var reader = DB.GetDataReader(sql);
             Teacher teacher = null;
             if (reader.HasRows) {
-                reader.Read();
+                reader.Read()
                 teacher = CreateObject(reader);
                 reader.Close();
             }
